@@ -1,0 +1,79 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cat-image img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cat-details {
+  text-align: center;
+}
+
+.cat-details h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.cat-details p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.cat-details strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.cat-actions {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cat-actions button {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shopping-basket-icon {
+  font-size: 2.5rem;
+  fill: green;
+}
+
+.shopping-basket-icon:hover {
+  fill: black;
+}

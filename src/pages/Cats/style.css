@@ -1,0 +1,23 @@
+.cats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cat-info {
+  margin-top: 2rem;
+  width: 30%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cat-info img {
+  height: 12rem;
+  width: 20rem;
+  border-radius: 10px;
+}
+
+.cat-info p {
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
