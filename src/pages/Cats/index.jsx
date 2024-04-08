@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import catsData from "../../api/cats.json";
-import "./style.css";
 import Modal from "../../components/Modal";
-
-export const catsPerPage = 6;
+import "./style.css";
+export const catsPerPage = 10;
 
 const Cats = ({ page }) => {
   const startIndex = (page - 1) * catsPerPage;

@@ -1,11 +1,16 @@
 nav {
+  background-color: #f9fafc;
   border-bottom: 0.3rem solid black;
+  width: 100%; /* Definindo a largura para 100% */
 }
+
 nav ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   list-style: none;
+  padding: 0; /* Removendo o preenchimento padrão */
+  margin: 0; /* Removendo a margem padrão */
 }
 
 nav ul li {
