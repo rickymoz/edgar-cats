@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../../assets/edgar-cats.jpg");
+  background-image: url("../../assets/edgar-cats.svg");
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -38,19 +38,27 @@
 
 .shop-button {
   display: inline-block;
-  background-color: #ffcc00;
-  color: #333;
+  background-color: #000;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
   margin-top: 20px;
   font-size: 1.5rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .shop-button:hover {
-  background-color: #ffd633;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  .cat-icon {
+    fill: #000;
+  }
 }
 
 .cat-icon {
   margin-left: 5px;
+  fill: #fff;
 }

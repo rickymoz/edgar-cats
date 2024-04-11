@@ -4,10 +4,12 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
 import NoPage from "./pages/NoPage";
+import { Provider } from "react-redux";
+import store from "./features";
 
 function App() {
   return (
-    <>
+    <Provider store={store}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -17,7 +19,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-    </>
+    </Provider>
   );
 }
 
