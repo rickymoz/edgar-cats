@@ -48,15 +48,6 @@
   transform: scale(1.1);
 }
 
-@media screen and (max-width: 768px) {
-  .cats-info img {
-    width: 80vw;
-  }
-  .cats-info p {
-    font-size: 3vw;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .cats-info img {
     width: 100%;
@@ -68,7 +59,17 @@
   }
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 768px) {
+  .cats-info img {
+    width: 80vw;
+    height: auto;
+  }
+  .cats-info p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
   .cats-info img {
     width: 19vw;
     height: 19vh;

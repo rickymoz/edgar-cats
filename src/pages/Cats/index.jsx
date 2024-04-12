@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import catsData from "../../api/cats.json";
 import Modal from "../../components/Modal";
 import { useSelector } from "react-redux";

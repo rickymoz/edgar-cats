@@ -1,13 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [cartCount, setCartCount] = useState(0);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const updateCartCount = () => {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    setCartCount(cart.length);
+  };
+
+  useEffect(() => {
+    updateCartCount();
+  }, []);
 
   return (
     <>
@@ -29,7 +39,9 @@ const Navbar = () => {
             <Link to="/shop">SHOP</Link>
           </li>
           <li>
-            <Link to="/cart">CART</Link>
+            <Link to="/cart">
+              CART <span id="cart-count">({cartCount})</span>
+            </Link>
           </li>
         </ul>
       </nav>

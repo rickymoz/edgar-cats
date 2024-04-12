@@ -4,13 +4,27 @@ import Swal from "sweetalert2";
 import "./style.css";
 
 const Modal = ({ cat, onClose }) => {
-  const handleClick = () => {
+  const addToCart = () => {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(cat);
+    localStorage.setItem("cart", JSON.stringify(cart));
     Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Unfortunately Edgar has already sold the last kitten!",
+      icon: "success",
+      title: "Added to Cart!",
+      showConfirmButton: false,
+      timer: 1500,
     });
+    updateCartCount();
   };
+
+  const updateCartCount = () => {
+    const cartCount = document.getElementById("cart-count");
+    if (cartCount) {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cartCount.innerText = cart.length;
+    }
+  };
+
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content">
@@ -40,7 +54,7 @@ const Modal = ({ cat, onClose }) => {
             </p>
           </div>
           <div className="cat-actions">
-            <button onClick={handleClick}>
+            <button onClick={addToCart}>
               <GiTakeMyMoney className="shopping-basket-icon" />
             </button>
           </div>
