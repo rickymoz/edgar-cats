@@ -40,7 +40,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/cart">
-              CART <span id="cart-count">{cartCount}</span>
+              CART <span id="cart-count">({cartCount})</span>
             </Link>
           </li>
         </ul>
