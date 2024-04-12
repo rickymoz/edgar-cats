@@ -1,0 +1,19 @@
+/* style.css */
+
+.clear-filters {
+  display: flex;
+  justify-content: center;
+}
+
+.clear-filters button {
+  padding: 0.5rem 1rem;
+  display: flex;
+  border-radius: 4px;
+  background-color: #dfdfdf;
+  cursor: pointer;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+.clear-filters button:hover {
+  background-color: #cfcfcf;
+}

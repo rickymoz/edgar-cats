@@ -6,20 +6,19 @@ import {
   clearFilters,
 } from "../../features/filters/filtersSlice";
 import Cats, { catsPerPage } from "../Cats";
-import LoadingAnimation from "../../components/Loading";
+import LoadingOverlay from "../../components/LoadingOverlay";
+import FilterDropdown from "../../components/FilterDropdown";
+import ClearFiltersButton from "../../components/ClearFiltersButton";
+import Pagination from "../../components/Pagination";
 import catsData from "../../api/cats.json";
-import "./index.css";
+import "./style.css";
 
 const Shop = () => {
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(
-    parseInt(localStorage.getItem("currentPage"), 10) || 1
+    parseInt(localStorage.getItem("currentPage"))
   );
-  const [filters, setFilters] = useState({
-    country: "",
-    price: "",
-    breed: "",
-  });
+  const [filters, setFilters] = useState({ country: "", price: "", breed: "" });
   const [uniqueCountries, setUniqueCountries] = useState([]);
   const [priceRanges, setPriceRanges] = useState([]);
   const [inputPage, setInputPage] = useState(page.toString());
@@ -90,11 +89,7 @@ const Shop = () => {
   return (
     <>
       {loading ? (
-        <div className="modal-overlay">
-          <div className="loading-overlay">
-            <LoadingAnimation />
-          </div>
-        </div>
+        <LoadingOverlay />
       ) : (
         <div className="survey">
           <div className="header">
@@ -103,95 +98,48 @@ const Shop = () => {
           </div>
           <div className="container">
             <div className="filters">
-              <div className="country-filter">
-                <label htmlFor="countryFilter">Country</label>
-                <select
-                  value={filters.country}
-                  onChange={(event) => {
-                    const country = event.target.value;
-                    dispatch(setCountryFilter(country));
-                    dispatch(setPriceFilter(""));
-                    setFilters({ ...filters, country, price: "" });
-                    setPage(1);
-                  }}
-                  name="countryFilter"
-                >
-                  <option value="">All</option>
-                  {uniqueCountries.map((country, index) => (
-                    <option key={index} value={country}>
-                      {country}
-                    </option>
-                  ))}
-                </select>
-              </div>
-              <div className="price-filter">
-                <label htmlFor="priceSelect">Price</label>
-                <select
-                  id="priceSelect"
-                  value={filters.price}
-                  onChange={(event) => {
-                    const price = event.target.value;
-                    dispatch(setPriceFilter(price));
-                    dispatch(setCountryFilter(""));
-                    setFilters({ ...filters, price, country: "" });
-                    setPage(1);
-                  }}
-                >
-                  <option value="">All</option>
-                  {priceRanges.map((range, index) => (
-                    <option key={index} value={range}>
-                      {range}
-                    </option>
-                  ))}
-                </select>
-              </div>
+              <FilterDropdown
+                label="Country"
+                options={uniqueCountries}
+                value={filters.country}
+                onChange={(event) => {
+                  const country = event.target.value;
+                  dispatch(setCountryFilter(country));
+                  dispatch(setPriceFilter(""));
+                  setFilters({ ...filters, country, price: "" });
+                  setPage(1);
+                }}
+              />
+              <FilterDropdown
+                label="Price"
+                options={priceRanges}
+                value={filters.price}
+                onChange={(event) => {
+                  const price = event.target.value;
+                  dispatch(setPriceFilter(price));
+                  dispatch(setCountryFilter(""));
+                  setFilters({ ...filters, price, country: "" });
+                  setPage(1);
+                }}
+              />
             </div>
-            <div className="clear-filters">
-              {Object.values(appliedFilters).some((value) => value !== "") && (
-                <button
-                  type="button"
-                  onClick={() => {
-                    dispatch(clearFilters());
-                    setFilters({ country: "", price: "", breed: "" });
-                    setPage(1);
-                  }}
-                >
-                  Clear Filters
-                </button>
-              )}
-            </div>
+            {Object.values(appliedFilters).some((filter) => filter !== "") && (
+              <ClearFiltersButton
+                onClick={() => {
+                  dispatch(clearFilters());
+                  setFilters({ country: "", price: "", breed: "" });
+                  setPage(1);
+                }}
+              />
+            )}
             <Cats page={page} filters={filters} />
-            <div className="actions">
-              <button
-                onClick={() => goToPage(page - 1)}
-                disabled={page === 1} // Disable back button if on first page
-              >
-                {"<"}
-              </button>
-              <span>
-                <input
-                  ref={inputRef}
-                  type="number"
-                  value={inputPage}
-                  onChange={(e) => {
-                    setInputPage(e.target.value);
-                    const pageNumber = parseInt(e.target.value, 10);
-                    if (!isNaN(pageNumber)) {
-                      goToPage(pageNumber);
-                    }
-                  }}
-                  style={{ width: "50px" }}
-                />
-                {" of "}
-                {totalPages}
-              </span>
-              <button
-                onClick={() => goToPage(page + 1)}
-                disabled={page === totalPages} // Disable next button if on last page
-              >
-                {">"}
-              </button>
-            </div>
+            <Pagination
+              page={page}
+              totalPages={totalPages}
+              onPageChange={goToPage}
+              inputPage={inputPage}
+              setInputPage={setInputPage}
+            />
           </div>
         </div>
       )}

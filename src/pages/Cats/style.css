@@ -23,7 +23,15 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  padding: 10px;
+  padding: 1.5%;
+  transition: all 0.3s ease;
+  font-size: 1.2vw;
+}
+
+.cats-info img {
+  width: 18.5vw;
+  height: 18.5vh;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
 }
 
@@ -34,15 +42,50 @@
   user-select: none;
 }
 
-.cats-info img {
-  width: 18.5vw;
-  height: 18.5vh;
-  border-radius: 0.5rem 0.5rem 0 0;
-  transition: all 0.3s ease;
-}
-
 .cats-info:hover img {
   filter: brightness(25%);
   border-radius: 1rem;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .cats-info img {
+    width: 80vw;
+  }
+  .cats-info p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cats-info img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cats-info p {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .cats-info img {
+    width: 19vw;
+    height: 19vh;
+  }
+
+  .cats-info p {
+    font-size: 1vw;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .cats-info img {
+    width: 22vw;
+    height: 22vh;
+  }
+
+  .cats-info p {
+    font-size: 1vw;
+  }
 }
