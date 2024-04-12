@@ -1,3 +1,4 @@
+import React from "react";
 import { GiTakeMyMoney } from "react-icons/gi";
 import Swal from "sweetalert2";
 import "./style.css";

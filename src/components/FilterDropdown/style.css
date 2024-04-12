@@ -1,0 +1,21 @@
+/* style.css */
+
+.filter-dropdown {
+  margin-bottom: 10px;
+}
+
+.filter-dropdown label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  border: none;
+  transition: 0.3s;
+}
+
+.filter-dropdown select {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}

@@ -1,0 +1,53 @@
+.survey {
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.15rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 1em;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .header {
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .header {
+    margin-top: 4rem;
+  }
+}
