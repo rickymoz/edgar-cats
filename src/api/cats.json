@@ -1,6 +1,7 @@
-{
-  "1": {
-    "race": "siamese",
+[
+  {
+    "id": "1",
+    "race": "Siamese",
     "name": "Ricardo Silvério",
     "color": "Gray",
     "weight": 10,
@@ -9,7 +10,8 @@
     "image": "https://img.freepik.com/free-photo/fluffy-kitten-sitting-grass-staring-sunset-playful-generated-by-artificial-intelligence_25030-67836.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 100
   },
-  "2": {
+  {
+    "id": "2",
     "race": "Maine Coon",
     "name": "Dave The Magical Cheese Wizard",
     "color": "Brown",
@@ -19,7 +21,8 @@
     "image": "https://img.freepik.com/free-photo/cute-domestic-kitten-sitting-leaf-generative-ai_188544-8316.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 150
   },
-  "3": {
+  {
+    "id": "3",
     "race": "Persian",
     "name": "Fluffy",
     "color": "White",
@@ -29,7 +32,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-looking-camera-surrounded-by-snow-generated-by-artificial-intelligence_188544-84910.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 200
   },
-  "4": {
+  {
+    "id": "4",
     "race": "Sphynx",
     "name": "Paulo Barbosa",
     "color": "Pink",
@@ -39,7 +43,8 @@
     "image": "https://img.freepik.com/free-photo/close-up-cute-fluffy-kitten-staring-generative-ai_188544-9120.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 300
   },
-  "5": {
+  {
+    "id": "5",
     "race": "Scottish Fold",
     "name": "Francisco Silva",
     "color": "Gray and White",
@@ -49,7 +54,8 @@
     "image": "https://img.freepik.com/free-photo/cute-domestic-kitten-sits-window-staring-outside-generative-ai_188544-12519.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 250
   },
-  "6": {
+  {
+    "id": "6",
     "race": "Bengal",
     "name": "Tiago Padrão",
     "color": "Orange",
@@ -59,7 +65,8 @@
     "image": "https://img.freepik.com/free-photo/cute-domestic-cat-staring-out-window-outdoors-generative-ai_188544-8406.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 180
   },
-  "7": {
+  {
+    "id": "7",
     "race": "Russian Blue",
     "name": "Sasha",
     "color": "Blue",
@@ -69,7 +76,8 @@
     "image": "https://img.freepik.com/premium-photo/cute-animal-cats-cat-lovers-june-4-international-cat-hugging-day-march-22-japan-cat-day_10221-17970.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 220
   },
-  "8": {
+  {
+    "id": "8",
     "race": "Ragdoll",
     "name": "Muffin",
     "color": "Cream",
@@ -79,7 +87,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-staring-out-window-curious-generative-ai_188544-12518.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 280
   },
-  "9": {
+  {
+    "id": "9",
     "race": "Abyssinian",
     "name": "Simba",
     "color": "Red",
@@ -89,7 +98,8 @@
     "image": "https://img.freepik.com/free-photo/curious-cats-playing-tunnels-tubes_60438-3454.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 320
   },
-  "10": {
+  {
+    "id": "10",
     "race": "British Shorthair",
     "name": "Oscar",
     "color": "Gray",
@@ -99,7 +109,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-staring-with-striped-fur-black-background-generative-ai_188544-9659.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 230
   },
-  "11": {
+  {
+    "id": "11",
     "race": "Siamese",
     "name": "Luna",
     "color": "Cream",
@@ -109,7 +120,8 @@
     "image": "https://img.freepik.com/free-photo/cute-cat-wearing-karate-cloths-generative-ai_8829-2905.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 180
   },
-  "12": {
+  {
+    "id": "12",
     "race": "Maine Coon",
     "name": "Max",
     "color": "Black",
@@ -119,7 +131,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-outdoors-staring-sunset-fluffy-fur-generated-by-artificial-intelligence_188544-85045.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 270
   },
-  "13": {
+  {
+    "id": "13",
     "race": "Persian",
     "name": "Princess",
     "color": "Silver",
@@ -129,7 +142,8 @@
     "image": "https://img.freepik.com/free-photo/cats-enjoying-exploration-through-tunnels_60438-3545.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 300
   },
-  "14": {
+  {
+    "id": "14",
     "race": "Sphynx",
     "name": "Sphinx",
     "color": "White",
@@ -139,7 +153,8 @@
     "image": "https://img.freepik.com/free-photo/cute-puppy-portrait-domestic-purebred-fluffy-adorable-terrier-generated-by-ai_188544-15633.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 350
   },
-  "15": {
+  {
+    "id": "15",
     "race": "Scottish Fold",
     "name": "Whisk",
     "color": "Black and White",
@@ -149,7 +164,8 @@
     "image": "https://img.freepik.com/free-photo/cute-cat-laying-grass_23-2150385852.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 240
   },
-  "16": {
+  {
+    "id": "16",
     "race": "Bengal",
     "name": "Leo",
     "color": "Brown",
@@ -159,7 +175,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-looking-camera-playful-with-robotic-toy-generated-by-artificial-intelligence_188544-85049.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 200
   },
-  "17": {
+  {
+    "id": "17",
     "race": "Russian Blue",
     "name": "Milo",
     "color": "Gray",
@@ -169,7 +186,8 @@
     "image": "https://img.freepik.com/free-photo/cute-cat-scifi-space-wallpaper_1409-6912.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 210
   },
-  "18": {
+  {
+    "id": "18",
     "race": "Ragdoll",
     "name": "Snowball",
     "color": "White",
@@ -179,7 +197,8 @@
     "image": "https://img.freepik.com/free-photo/beautiful-fluffy-cat-bed-generative-ai_169016-28980.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 290
   },
-  "19": {
+  {
+    "id": "19",
     "race": "Abyssinian",
     "name": "Cleo",
     "color": "Fawn",
@@ -189,7 +208,8 @@
     "image": "https://img.freepik.com/premium-photo/cat-with-dragon-head_855221-535.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 330
   },
-  "20": {
+  {
+    "id": "20",
     "race": "British Shorthair",
     "name": "Charlie",
     "color": "Blue",
@@ -199,7 +219,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-staring-fluffy-fur-playful-nature-beautiful-animal-generated-by-artificial-intelligence_188544-85072.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 250
   },
-  "21": {
+  {
+    "id": "21",
     "race": "Siamese",
     "name": "Coco",
     "color": "Chocolate",
@@ -209,7 +230,8 @@
     "image": "https://img.freepik.com/free-photo/sketch-drawing-cat_1268-30458.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 190
   },
-  "22": {
+  {
+    "id": "22",
     "race": "Maine Coon",
     "name": "Tiger",
     "color": "Tabby",
@@ -219,7 +241,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-stares-camera-with-playful-curiosity-generated-by-ai_188544-19723.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 280
   },
-  "23": {
+  {
+    "id": "23",
     "race": "Persian",
     "name": "Garfield",
     "color": "Orange",
@@ -229,7 +252,8 @@
     "image": "https://img.freepik.com/premium-photo/galaxies-spirals-space-nebulae-stars-smoke-iridescent_777271-5576.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 320
   },
-  "24": {
+  {
+    "id": "24",
     "race": "Sphynx",
     "name": "Mittens",
     "color": "Gray",
@@ -239,7 +263,8 @@
     "image": "https://img.freepik.com/free-photo/futuristic-cat-concept_23-2150969503.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 330
   },
-  "25": {
+  {
+    "id": "25",
     "race": "Scottish Fold",
     "name": "Oliver",
     "color": "White",
@@ -249,7 +274,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-with-fluffy-fur-looking-camera-outdoors-generated-by-artificial-intelligence_25030-67792.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 260
   },
-  "26": {
+  {
+    "id": "26",
     "race": "Bengal",
     "name": "Shadow",
     "color": "Black",
@@ -259,7 +285,8 @@
     "image": "https://img.freepik.com/free-photo/cute-furry-cat-relaxing-indoors_23-2150679190.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 210
   },
-  "27": {
+  {
+    "id": "27",
     "race": "Russian Blue",
     "name": "Loki",
     "color": "Blue",
@@ -269,7 +296,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-sitting-grass-looking-camera-outdoors-generated-by-artificial-intelligence_25030-66133.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 220
   },
-  "28": {
+  {
+    "id": "28",
     "race": "Ragdoll",
     "name": "Bella",
     "color": "Cream",
@@ -279,7 +307,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-resting-grass-enjoying-autumn-sunlight-generated-by-artificial-intelligence_25030-63228.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 300
   },
-  "29": {
+  {
+    "id": "29",
     "race": "Abyssinian",
     "name": "Leo",
     "color": "Red",
@@ -289,7 +318,8 @@
     "image": "https://img.freepik.com/free-photo/cute-kitten-with-pumpkin-lantern-celebrating-spooky-halloween-night-generated-by-artificial-intellingence_25030-63935.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 350
   },
-  "30": {
+  {
+    "id": "30",
     "race": "British Shorthair",
     "name": "Luna",
     "color": "Gray",
@@ -298,5 +328,5 @@
     "location": "United Kingdom",
     "image": "https://img.freepik.com/free-photo/winter-mood-beautiful-kitten-siberian-cat-sitting-sofa-new-year-decoration_155003-24250.jpg?size=626&ext=jpg&ga=GA1.1.240794431.1709195503&semt=ais",
     "price": 270
-  }
-}
+  }  
+]

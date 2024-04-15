@@ -10,10 +10,29 @@ const Modal = ({ cat, onClose }) => {
     localStorage.setItem("cart", JSON.stringify(cart));
     Swal.fire({
       icon: "success",
-      title: "Added to Cart!",
-      showConfirmButton: false,
-      timer: 1500,
+      title: "Success!",
+      html: "<p>Kitten added! Your cart is even cuter now.</p>",
+      showCancelButton: true,
+      confirmButtonText: "Go to cart",
+      cancelButtonText: "Continue shopping",
+      reverseButtons: true,
+      timer: 10000,
+      timerProgressBar: true,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          icon: "info",
+          title: "Redirecting...",
+          html: "<p>We are redirecting you to the cart",
+          timer: 2000,
+          timerProgressBar: true,
+          showConfirmButton: false,
+        }).then(() => {
+          window.location.href = "/cart";
+        });
+      }
     });
+
     updateCartCount();
   };
 
