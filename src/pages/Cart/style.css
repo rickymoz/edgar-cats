@@ -115,13 +115,3 @@
     font-size: 1rem;
   }
 }
-
-/* For desktops */
-@media only screen and (min-width: 1201px) {
-  /* Adjust styles here */
-}
-
-/* For TVs (assuming large screens) */
-@media only screen and (min-width: 1920px) {
-  /* Adjust styles here */
-}
