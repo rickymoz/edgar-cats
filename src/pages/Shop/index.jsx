@@ -91,7 +91,7 @@ const Shop = () => {
       {loading ? (
         <LoadingOverlay />
       ) : (
-        <div className="survey">
+        <div className="shop">
           <div className="header">
             <h2>SHOP</h2>
             <p>EDGAR'S KITTENS</p>

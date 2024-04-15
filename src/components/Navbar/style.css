@@ -52,6 +52,14 @@
   border-bottom: 2.5px solid black;
 }
 
+#cart-count::before {
+  content: "(";
+}
+
+#cart-count::after {
+  content: ")";
+}
+
 @media screen and (max-width: 768px) {
   .menu-btn {
     display: flex;
